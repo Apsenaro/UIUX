@@ -6,16 +6,17 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   overflow: hidden;
-  background: #F4F1EA;
+  background: var(--background-color-1);
   transition: 0.3s;
 }
 
 :root {
   --primary-color: #65c034;
-  --background-color-1: #F4F1EA;
-  --background-color-2: #EEEADF;
+  --background-color-1: #f4f1ea;
+  --background-color-2: #eeeadf;
+  --secondary-color: #1c3434;
 }
 
 header {
@@ -47,7 +48,7 @@ nav ul li a {
 }
 
 nav ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -87,4 +88,30 @@ nav ul li:last-child a:hover {
 nav ul li:last-child a:hover::after {
   width: 0;
   left: 0;
+}
+
+.hero {
+  background: #1C3434;
+  max-width: 1115px;
+  margin: 0 auto;
+  /* display: flex; */
+  color: #fff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.hero .woman {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hero .woman img {
+  height: 150%;
+  margin-bottom: -50px;
+}
+
+.hero h1 {
+  display: flex;
+  flex-direction: column;
 }
